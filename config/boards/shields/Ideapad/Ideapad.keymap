@@ -8,15 +8,21 @@
 
         default_layer {
             bindings = <
-             &......
+                          &kp Plus  &kp MINUS &kp STAR  &kp FSHL  &kp DEL
+                &kp LSHFT &kp ESC   &kp N7    &kp N8    &kp N9    &kp BSPC
+                &kp TAB   &none     &kp N4    &kp N5    &kp N6    &none     &none
+                          &kp CTRL &kp N1    &kp N2    &kp N3    &kp COMMA  &kp DOT
+                &kp N0    &kp SPACE &kp RETURN
             >;
         };
 
         bt_layer {
             bindings = < 
-             &none          &none           &bootloader
-             &none          &none           &bt BT_CLR
-             &bt BT_SEL 0   &bt BT_Sel 1    &bt BT_SEL 2
+                              &none   &none   &none   &none  &none
+                &none         &none   &none   &none   &none  &none
+                &none         &none   &none   &none   &none  &none        &none
+                              &none   &none   &none   &none  &bootloader  &bt BT_CLR
+                &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2
             >;
         };
     };
