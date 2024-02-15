@@ -1,2 +1,0 @@
-config SHIELD_IDEAPAD
- def_bool $(shields_list_contains, Ideapad)
