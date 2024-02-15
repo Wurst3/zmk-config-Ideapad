@@ -1,6 +1,0 @@
-if SHIELD_IDEAPAD
-
-config ZMK_KEYBOARD_NAME
- default "Ideapad"
-
-endif 
