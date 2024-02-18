@@ -14,31 +14,37 @@
         compatible = "zmk,combos";
 
         Klammer_Links {
+            timeout-ms = <50>;
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <8 11>;
         };
 
         Klammer_Rechts {
+            timeout-ms = <50>;
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <9 11>;
         };
 
         Layer_1 {
+            timeout-ms = <50>;
             bindings = <&to 1>;
-            key-positions = <0 11>;
+            key-positions = <0 5>;
         };
 
         Layer_2 {
+            timeout-ms = <50>;
             bindings = <&to 2>;
-            key-positions = <1 11>;
+            key-positions = <1 5>;
         };
 
         Copy {
+            timeout-ms = <50>;
             bindings = <&kp C>;
             key-positions = <11 14>;
         };
 
         Paste {
+            timeout-ms = <50>;
             bindings = <&kp V>;
             key-positions = <11 15>;  
         };
