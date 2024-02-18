@@ -8,6 +8,8 @@
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
+        a-gpios = <16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
         status = "disabled";
     };
@@ -36,11 +38,6 @@
                     <&pro_micro 8 GPIO_ACTIVE_HIGH>,
                     <&pro_micro 9 GPIO_ACTIVE_HIGH>;
     };
-
-left_encoder {
-    a-gpios = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-};
 
     default_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
