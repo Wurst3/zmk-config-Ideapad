@@ -20,10 +20,10 @@
 
         Nav {
             bindings = <
-                  &tog 0             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_NEXT  &kp C_PREVIOUS
+                  &none              &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_NEXT  &kp C_PREVIOUS
 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &none                 &none       &none
 &kp LEFT_BRACE    &kp RIGHT_BRACE    &none                 &kp UP                &none       &none           &none
-                  &none              &kp LEFT              &kp DOWN              &kp RIGHT   &trans          &trans
+                  &tog 0             &kp LEFT              &kp DOWN              &kp RIGHT   &trans          &trans
                                                                                  &none       &trans          &trans
             >;
         };
