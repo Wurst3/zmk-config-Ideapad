@@ -41,6 +41,7 @@
         Paste {
             bindings = <&kp V>;
             key-positions = <11 15>;  
+        };
     };
 
     keymap {
