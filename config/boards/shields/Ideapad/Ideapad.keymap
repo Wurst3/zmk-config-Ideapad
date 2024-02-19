@@ -62,7 +62,7 @@
                                                                         &kp NUMBER_0          &kp SPACE      &kp ENTER
             >;
 
-            sensor-bindings = <inc_dec_kp F7 F6>;
+            sensor-bindings = <&inc_dec_kp F7 F6>;
         };
 
         Nav_layer {
