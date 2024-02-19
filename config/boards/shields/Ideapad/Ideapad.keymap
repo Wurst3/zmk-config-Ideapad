@@ -50,6 +50,21 @@
         };
     };
 
+    behaviors {
+        VOL_encoder: VOL_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+        };
+
+        ROW_encoder: ROW_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&kp LEFT>;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,8 +76,7 @@
                   &kp LGUI       &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3       &kp COMMA      &kp DOT
                                                                         &kp NUMBER_0          &kp SPACE      &kp ENTER
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <VOL_encoder>;
         };
 
         Nav_layer {
@@ -73,6 +87,7 @@
                &to 0          &kp LEFT              &kp DOWN              &kp RIGHT   &trans          &trans
                                                                           &none       &trans          &trans
             >;
+            sensor-bindings = <ROW_encoder>;
         };
 
         bt_layer {
