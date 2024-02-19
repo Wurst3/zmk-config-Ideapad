@@ -73,7 +73,7 @@
                &to 0          &kp LEFT              &kp DOWN              &kp RIGHT   &trans          &trans
                                                                           &none       &trans          &trans
             >;
-            sensor-bindings = <&linc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         bt_layer {
