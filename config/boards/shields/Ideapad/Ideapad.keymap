@@ -15,13 +15,13 @@
 
         Klammer_Links {
             timeout-ms = <100>;
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp RS(N8)>;
             key-positions = <8 11>;
         };
 
         Klammer_Rechts {
             timeout-ms = <100>;
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp RS(N9)>;
             key-positions = <9 11>;
         };
 
@@ -67,11 +67,11 @@
 
         Nav_layer {
             bindings = <
-                  &none              &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_NEXT  &kp C_PREVIOUS
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &none                 &none       &none
-&kp LEFT_BRACE    &kp RIGHT_BRACE    &none                 &kp UP                &none       &none           &none
-                  &to 0             &kp LEFT              &kp DOWN              &kp RIGHT   &trans          &trans
-                                                                                 &none       &trans          &trans
+               &none          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_NEXT  &kp C_PREVIOUS
+&kp RA (N8)    &kp RA (N9)    &none                 &none                 &none       &trans
+&kp RA (N7)    &kp RA (N0)    &none                 &kp UP                &none       &trans          &none
+               &to 0          &kp LEFT              &kp DOWN              &kp RIGHT   &trans          &trans
+                                                                          &none       &trans          &trans
             >;
         };
 
