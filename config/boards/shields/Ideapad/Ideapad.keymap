@@ -62,18 +62,18 @@
                   &kp LGUI       &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3       &kp COMMA      &kp DOT
                                                                         &kp NUMBER_0          &kp SPACE      &kp ENTER
             >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         Nav_layer {
             bindings = <
-               &none          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_NEXT  &kp C_PREVIOUS
+               &none          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS  &kp C_NEXT
 &kp RA (N8)    &kp RA (N9)    &none                 &none                 &none       &trans
 &kp RA (N7)    &kp RA (N0)    &none                 &kp UP                &none       &trans          &none
                &to 0          &kp LEFT              &kp DOWN              &kp RIGHT   &trans          &trans
                                                                           &none       &trans          &trans
             >;
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         bt_layer {
