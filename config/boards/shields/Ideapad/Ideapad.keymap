@@ -55,6 +55,14 @@
         compatible = "zmk,keymap";
 
         default_layer {
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//           |    Tab  |    +    |    -    |    *    |    /    |
+// | RShift  |    Esc  |    7    |    8    |    9    |    del  |
+// |  LCtrl  | Alt gr  |    4    |    5    |    6    |    BS   |  PLay   |
+//           | Windows |    1    |    2    |    3    |    ,    |    .    |
+//                                         |    0    |  Space  |  Enter  |
+
             bindings = <
                   &kp TAB        &kp KP_PLUS      &kp KP_MINUS          &kp KP_MULTIPLY       &kp KP_SLASH
 &kp RSHIFT        &kp ESC        &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9       &kp DELETE
