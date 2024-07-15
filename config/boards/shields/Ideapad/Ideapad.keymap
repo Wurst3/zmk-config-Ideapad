@@ -76,8 +76,8 @@
         SC_layer {
             bindings = < 
              &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &none           &none           &kp F4
-&kp none     &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp F8          &kp F6          &kp F5
-&kp none     &kp K               &kp T                &kp F9          &kp F7          &kp M       &trans
+&none        &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp F8          &kp F6          &kp F5
+&none        &kp K               &kp T                &kp F9          &kp F7          &kp M       &trans
              &kp L               &kp P                &none           &kp F10         &none       &none
                                                         &kp LC(Z)     &kp LC(Y)    &trans
             >;
