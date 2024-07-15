@@ -4,7 +4,8 @@
 
 #define default_layer 0
 #define Nav_layer     1
-#define bt_layer      2
+#define SC_layer      2
+#define bt_layer      3
 
 #define NONE 0
 
@@ -13,25 +14,13 @@
     combos {
         compatible = "zmk,combos";
 
-        Klammer_Links {
-            timeout-ms = <100>;
-            bindings = <&kp RS(N8)>;
-            key-positions = <8 11>;
-        };
-
-        Klammer_Rechts {
-            timeout-ms = <100>;
-            bindings = <&kp RS(N9)>;
-            key-positions = <9 11>;
-        };
-
         Layer_1 {
             timeout-ms = <100>;
             bindings = <&to 1>;
             key-positions = <0 5>;
         };
 
-        Layer_2 {
+        Layer_3 {
             timeout-ms = <100>;
             bindings = <&to 2>;
             key-positions = <1 5>;
@@ -57,18 +46,18 @@
         default_layer {
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//           |    Tab  |    +    |    -    |    *    |    /    |
-// | RShift  |    Esc  |    7    |    8    |    9    |    del  |
-// |  LCtrl  | Alt gr  |    4    |    5    |    6    |    BS   |  PLay   |
+//           |   Esc   |    +    |    -    |    *    |    /    |
+// | SC Lay  |   Tab   |    7    |    8    |    9    |    del  |
+// | RShift  |  LCtrl  |    4    |    5    |    6    |    BS   |  PLay   |
 //           | Windows |    1    |    2    |    3    |    ,    |    .    |
 //                                         |    0    |  Space  |  Enter  |
 
             bindings = <
-                  &kp TAB        &kp KP_PLUS      &kp KP_MINUS          &kp KP_MULTIPLY       &kp KP_SLASH
-&kp RSHIFT        &kp ESC        &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9       &kp DELETE
-&kp LEFT_CONTROL  &kp RIGHT_ALT  &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6       &kp BACKSPACE  &kp C_PLAY_PAUSE
-                  &kp LGUI       &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3       &kp COMMA      &kp DOT
-                                                                        &kp NUMBER_0          &kp SPACE      &kp ENTER
+              &kp ESC             &kp PLUS        &kp MINUS       &kp MULTIPLY    &kp SLASH  
+&mo 2         &kp TAB             &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp DELETE
+&kp RSHIFT    &kp LEFT_CONTROL    &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp BACKSPACE    &kp C_PLAY_PAUSE
+              &kp LGUI            &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp COMMA        &kp DOT
+                                                                    &kp NUMBER_0          &kp SPACE      &kp ENTER
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
@@ -82,6 +71,16 @@
                                                                           &none       &trans          &trans
             >;
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+        };
+
+        SC_layer {
+            bindings = < 
+             &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp none    &kp none    &kp F4
+&kp none     &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp F8      &kp F6      &kp F5
+&kp none     &kp K               &kp T                &kp F9      &kp F7      &kp M       &kp trans
+             &kp L               &kp P                &kp none    &kp F10     &kp none    &kp none
+                                                        &kp LC(Z)     &kp LC(Y)    &kp trans
+            >;
         };
 
         bt_layer {
