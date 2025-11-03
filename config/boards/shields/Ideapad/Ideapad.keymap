@@ -65,9 +65,9 @@
         Nav_layer {
             bindings = <
                &to 0          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS  &kp C_NEXT
-&kp RA (N8)    &kp RA (N9)    &kp TAB               &none                 &none       &trans
+&kp RA (N8)    &kp RA (N9)    &kp TAB               &kp ESC               &none       &trans
 &kp RA (N7)    &kp RA (N0)    &kp Q                 &kp W                 &kp E       &trans          &none
-               &kp RSHIFT     &kp A                 &kp S                 &kp D       &kp F3          &trans
+               &kp LSHFT      &kp A                 &kp S                 &kp D       &kp F3          &trans
                                                                           &none       &trans          &trans
             >;
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
