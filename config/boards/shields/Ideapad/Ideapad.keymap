@@ -79,7 +79,7 @@
 &none        &kp LA(LC(NUMBER_8))  &kp LA(LC(NUMBER_9))  &kp LC(LS(K))   &kp F           &kp D
 &none        &kp LS(LC(R))         &kp LS(LC(O))         &kp H           &kp F7          &kp M       &trans
              &kp LS(LC(M))         &none                 &kp LA(V)       &none           &none       &none
-                                                                     &kp LC(Z)       &kp LC(Y)       &trans
+                                                                         &kp LC(Z)       &kp LC(Y)   &trans
             >;
         }; 
 
