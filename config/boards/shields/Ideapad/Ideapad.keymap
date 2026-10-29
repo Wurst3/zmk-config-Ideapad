@@ -57,7 +57,7 @@
 &mo 2         &kp TAB             &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp DELETE
 &kp RSHIFT    &kp LEFT_CONTROL    &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp BACKSPACE    &kp C_PLAY_PAUSE
               &kp LGUI            &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp COMMA        &kp DOT
-                                                                    &kp NUMBER_0          &kp SPACE      &kp ENTER
+                                                                  &kp NUMBER_0    &kp SPACE        &kp ENTER
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
@@ -73,13 +73,15 @@
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
+// Inventor Layout 
+
         SC_layer {
             bindings = < 
-             &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp E           &kp R           &kp F4
-&none        &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp F8          &kp F6          &kp F5
-&none        &kp K               &kp T                &kp F9          &kp F7          &kp M       &trans
-             &kp L               &kp P                &none           &kp F10         &none       &none
-                                                        &kp LC(Z)     &kp LC(Y)    &trans
+             &kp LA(LC(LEFT_BRACE))    &kp LA(LC(RIGHT_BRACE))    &kp E           &kp R           &kp F6
+&none        &kp LA(LC(LEFT_BRACKET))  &kp LA(LC(RIGHT_BRACKET))  &kp LC(LS(K))   &kp F           &kp D
+&none        &kp LS(LC(R))             &kp LS(LC(O))              &kp H           &kp F7          &kp M       &trans
+             &kp LS(LC(M))             &none                      &kp LA(V)       &none           &none       &none
+                                                                  &kp LC(Z)       &kp LC(Y)       &trans
             >;
         };
 
