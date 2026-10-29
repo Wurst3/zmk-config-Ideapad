@@ -83,7 +83,7 @@
              &kp LS(LC(M))             &none                      &kp LA(V)       &none           &none       &none
                                                                   &kp LC(Z)       &kp LC(Y)       &trans
             >;
-        };
+        }; 
 
         bt_layer {
             bindings = <
