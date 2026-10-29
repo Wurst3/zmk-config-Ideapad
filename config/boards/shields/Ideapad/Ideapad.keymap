@@ -73,8 +73,6 @@
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
-// Inventor Layout 
-
         SC_layer {
             bindings = < 
              &kp LA(LC(LEFT_BRACE))    &kp LA(LC(RIGHT_BRACE))    &kp E           &kp R           &kp F6
