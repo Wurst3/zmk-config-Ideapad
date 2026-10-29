@@ -20,4 +20,3 @@
 include:
   - board: nice_nano//zmk
     shield: Ideapad
-    

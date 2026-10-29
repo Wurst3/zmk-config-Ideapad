@@ -75,11 +75,11 @@
 
         SC_layer {
             bindings = < 
-             &kp LA(LC(LEFT_BRACE))    &kp LA(LC(RIGHT_BRACE))    &kp E           &kp R           &kp F6
-&none        &kp LA(LC(LEFT_BRACKET))  &kp LA(LC(RIGHT_BRACKET))  &kp LC(LS(K))   &kp F           &kp D
-&none        &kp LS(LC(R))             &kp LS(LC(O))              &kp H           &kp F7          &kp M       &trans
-             &kp LS(LC(M))             &none                      &kp LA(V)       &none           &none       &none
-                                                                  &kp LC(Z)       &kp LC(Y)       &trans
+             &kp LA(LC(NUMBER_7))  &kp LA(LC(NUMBER_0))  &kp E           &kp R           &kp F6
+&none        &kp LA(LC(NUMBER_8))  &kp LA(LC(NUMBER_9))  &kp LC(LS(K))   &kp F           &kp D
+&none        &kp LS(LC(R))         &kp LS(LC(O))         &kp H           &kp F7          &kp M       &trans
+             &kp LS(LC(M))         &none                 &kp LA(V)       &none           &none       &none
+                                                                     &kp LC(Z)       &kp LC(Y)       &trans
             >;
         }; 
 
@@ -94,3 +94,6 @@
         };
     };
 };
+
+
+~~~~~~~~~~~~~~~~
